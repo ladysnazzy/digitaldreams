@@ -5,13 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function to Calculate Age</title>
-</head>
-<!-- A JAVASCRIPT FUNCTION TO CALCLATE AGE -->
-<body style="background-color: yellow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> <br>
-    <label>What is your Date of Birth?</label> <input type="text" id="dob"> <br> </br>
-    <button id="sumit" style="background-color:black; color: white; width:120px;height:20px;padding:35px;" onclick="ageFunction()"> SUBMIT</button>
-    <h3 id="output" ></h3>
 
+    <style>
+
+        section{
+            width: 25%;
+            height: 100%;
+            background-color: rgb(124, 124, 99);
+            margin: 5em auto;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+        .labl{
+            /* margin: 30px; */
+            margin-bottom: 5em;
+            padding: 20px;
+        }
+        #inp{
+            margin: 0px;
+        }
+        .header{
+            text-align: center;
+            background-color: rgb(54, 59, 43);
+            color: white;
+            margin-top: -1em;
+            padding: 1em;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            width:100px;
+            height:20px;
+            padding:15px 2em;
+            margin-top: 20px;
+            padding-bottom: 25px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        #output{
+            /* margin-top: 10px; */
+            padding-top: -10px;
+            padding-bottom: 20px;
+        }
+        .error_msg{
+            color: red;
+          padding-right: 52px;
+        }
+        #success-border{
+            border: 1px solid rgb(1, 160, 1);
+        }
+
+    </style>
+</head>
+
+<body> <br>
+
+    <!-- A JAVASCRIPT FUNCTION TO CALCLATE AGE -->
+
+    <section> <br>
+        <header class="header">Age Calculator</header> <br>
+        <div class="form-group"> 
+            <label class="labl">What is your Date of Birth?</label> <br> </br>
+            <input type="text" id="inp" placeholder="Enter Date of Birth"> <br>
+            <span class="error_msg" id="inp_err" style="color: red;"></span> <br>
+
+            <input type="submit" class="btn" id="btn">
+            <h3 id="output"></h3>
+        </div>
+    </section>
+
+   
     <script src="agefunction.js"></script>
 </body>
 </html>
